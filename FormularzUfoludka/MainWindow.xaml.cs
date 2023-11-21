@@ -18,11 +18,22 @@ namespace FormularzUfoludka
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+    // https://designmodo.com/wp-content/uploads/2018/12/login-form.jpg
+    
     public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
+
+            string svgFilePath = "/assets/bg.svg";
+
+            BitmapImage bitmap = new BitmapImage();
+            bitmap.BeginInit();
+            bitmap.UriSource = new Uri(svgFilePath, UriKind.RelativeOrAbsolute);
+            bitmap.EndInit();
+
+            svgImage.Source = bitmap;
         }
     }
 }
