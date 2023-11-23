@@ -122,8 +122,8 @@
             </Expander>
         </StackPanel>
 
-        <Button Content="Wyślij Zgłoszenie" Width="300" Height="30" HorizontalAlignment="Center" Grid.Row="8" Margin="0, 0, 0, 10"/>
-        
+        <Button Content="Wyślij Zgłoszenie" Width="300" Height="30" HorizontalAlignment="Center" Grid.Row="8" Margin="0, 0, 0, 10" Click="sumbitForm"/>
+
         <Button Content="Pokaż Zgłoszenia" Width="300" Height="20" HorizontalAlignment="Center" Grid.Row="9"/>
     </Grid>
 </Window>
