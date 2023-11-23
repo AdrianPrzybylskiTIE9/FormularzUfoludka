@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,22 +19,56 @@ namespace FormularzUfoludka
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    // https://designmodo.com/wp-content/uploads/2018/12/login-form.jpg
     
     public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
+        }
 
-            string svgFilePath = "/assets/bg.svg";
+        private string GetAgeText(double age)
+        {
+            if (age == 1)
+            {
+                return "rok";
+            }
+            else if (age < 5)
+            {
+                return "lata";
+            }
+            else
+            {
+                return "lat";
+            }
+        }
 
-            BitmapImage bitmap = new BitmapImage();
-            bitmap.BeginInit();
-            bitmap.UriSource = new Uri(svgFilePath, UriKind.RelativeOrAbsolute);
-            bitmap.EndInit();
 
-            svgImage.Source = bitmap;
+        private void ageSliderHanlder(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            int val = (int)ageSlider.Value;
+            string ageText = GetAgeText(val);
+            //ageDisplay.Text = $"{val} {ageText}";
+        }
+
+        private void sumbitForm(object sender, RoutedEventArgs e)
+        {
+            string name = nameInput.Text;
+            string gender = maleRadioButton.IsChecked == true ? "Mężczyzna" : "Kobieta";
+            DateTime birthDate = birthDatePicker.SelectedDate ?? DateTime.MinValue;
+            int age = (int)ageSlider.Value;
+            string planet = ((ComboBoxItem)planetComboBox.SelectedItem).Content.ToString();
+            string spiece = ((ComboBoxItem)spieceComboBox.SelectedItem).Content.ToString();
+
+            List<string> favoriteFoods = new List<string>();
+            foreach (CheckBox item in ((StackPanel)((Expander)favoriteFoodsExpander.Content).Content).Children)
+            {
+                if (item.IsChecked == true)
+                {
+                    favoriteFoods.Add(item.Content.ToString());
+                }
+            }
+
         }
     }
 }
