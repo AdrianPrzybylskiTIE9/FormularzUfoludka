@@ -30,22 +30,6 @@ namespace FormularzUfoludka
             InitializeComponent();
         }
 
-        private string GetAgeText(double age)
-        {
-            if (age == 1)
-            {
-                return "rok";
-            }
-            else if (age < 5)
-            {
-                return "lata";
-            }
-            else
-            {
-                return "lat";
-            }
-        }
-
         private void sumbitForm(object sender, RoutedEventArgs e)
         {
             string name = nameInput.Text;
@@ -54,7 +38,6 @@ namespace FormularzUfoludka
             int age = (int)ageSlider.Value;
             string planet = ((ComboBoxItem)planetComboBox.SelectedItem).Content.ToString();
             string spiece = ((ComboBoxItem)spieceComboBox.SelectedItem).Content.ToString();
-            MessageBox.Show(spiece, "Balls");
 
             List<string> favoriteFoods = new List<string>();
             foreach(CheckBox item in foodsStackPanel.Children)
@@ -78,10 +61,18 @@ namespace FormularzUfoludka
                 FavoriteFoods = favoriteFoods
             });
 
+            
+
             DataTable dataTable = new DataTable();
             dataTable.dataListView.ItemsSource = dataList;
             dataTable.Show();
 
+        }
+
+        private void adminLogin(object sender, RoutedEventArgs e)
+        {
+            LoginWindow loginWindow = new LoginWindow();
+            loginWindow.Show();
         }
     }
 
