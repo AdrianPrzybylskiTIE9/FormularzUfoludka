@@ -12,9 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\Chudy Murzyn 123.DESKTOP-RK2D708\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\Chudy Murzyn 123.DESKTOP-RK2D708\\.nuget\\packages",
-      "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      "C:\\Users\\Gosc\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Gosc\\.nuget\\packages"
     ],
     "configProperties": {
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true

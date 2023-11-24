@@ -45,12 +45,13 @@
 
         <StackPanel Grid.Row="4" Width="250">
             <Label>Wiek:</Label>
-            <Slider x:Name="ageSlider" Width="200" Minimum="1" Maximum="1000" TickFrequency="1" IsSnapToTickEnabled="True" ValueChanged="ageSliderHanlder" Value="1"/>
-            <TextBlock x:Name="ageDisplay">1 lat</TextBlock>
+            <Slider x:Name="ageSlider" Width="200" Minimum="1" Maximum="1000" TickFrequency="1" IsSnapToTickEnabled="True" Value="1"/>
+            <TextBlock x:Name="ageDisplay" HorizontalAlignment="Center" Text="{Binding ElementName=ageSlider, Path=Value}" Width="200"></TextBlock>
         </StackPanel>
-        
 
-        
+
+
+
         <StackPanel Grid.Row="5" Width="250">
             <Label>Planeta:</Label>
             <ComboBox x:Name="planetComboBox">
@@ -115,7 +116,7 @@
 
         <StackPanel Grid.Row="7" Width="250" Margin="0, 10">
             <Expander Header="Ulubione Jedzenie" IsExpanded="True" x:Name="favoriteFoodsExpander">
-                <StackPanel>
+                <StackPanel x:Name="foodsStackPanel">
                     <CheckBox Content="Hotdog" Margin="5, 5, 0, 0 "/>
                     <CheckBox Content="Pizza Hawajska" Margin="5, 5, 0, 0 " />
                 </StackPanel>

@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Numerics;
 using System.Reflection;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -45,26 +46,18 @@ namespace FormularzUfoludka
             }
         }
 
-
-        private void ageSliderHanlder(object sender, RoutedPropertyChangedEventArgs<double> e)
-        {
-            int val = (int)ageSlider.Value;
-            string ageText = GetAgeText(val);
-            //ageDisplay.Text = $"{val} {ageText}";
-        }
-
         private void sumbitForm(object sender, RoutedEventArgs e)
         {
             string name = nameInput.Text;
             string gender = maleRadioButton.IsChecked == true ? "Mężczyzna" : "Kobieta";
             DateTime birthDate = birthDatePicker.SelectedDate ?? DateTime.MinValue;
             int age = (int)ageSlider.Value;
-
             string planet = ((ComboBoxItem)planetComboBox.SelectedItem).Content.ToString();
             string spiece = ((ComboBoxItem)spieceComboBox.SelectedItem).Content.ToString();
+            MessageBox.Show(spiece, "Balls");
 
             List<string> favoriteFoods = new List<string>();
-            foreach (CheckBox item in ((StackPanel)((Expander)favoriteFoodsExpander.Content).Content).Children)
+            foreach(CheckBox item in foodsStackPanel.Children)
             {
                 if (item.IsChecked == true)
                 {
