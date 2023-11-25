@@ -40,7 +40,7 @@ namespace FormularzUfoludka
             }
             else
             {
-                MessageBox.Show("Zły login lub hasło");
+                MessageBox.Show("Podałeś zły login lub hasło.", "Błąd!", MessageBoxButton.OK, MessageBoxImage.Error);
             }
 
 

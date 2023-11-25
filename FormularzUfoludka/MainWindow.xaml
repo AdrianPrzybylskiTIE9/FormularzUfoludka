@@ -40,12 +40,12 @@
 
         <StackPanel Grid.Row="3" Width="250">
             <Label>Data urodzenia:</Label>
-            <DatePicker x:Name="birthDatePicker" Width="200"></DatePicker>
+            <DatePicker x:Name="birthDatePicker" Width="200" SelectedDateChanged="SetSliderAge"></DatePicker>
         </StackPanel>
 
         <StackPanel Grid.Row="4" Width="250">
             <Label>Wiek:</Label>
-            <Slider x:Name="ageSlider" Width="200" Minimum="1" Maximum="1000" TickFrequency="1" IsSnapToTickEnabled="True" Value="1"/>
+            <Slider x:Name="ageSlider" Width="200" Minimum="1" Maximum="1000" TickFrequency="1" IsSnapToTickEnabled="True" Value="1" ValueChanged="SetDatePickerDate"/>
             <TextBlock x:Name="ageDisplay" HorizontalAlignment="Center" Text="{Binding ElementName=ageSlider, Path=Value}" Width="200"></TextBlock>
         </StackPanel>
 

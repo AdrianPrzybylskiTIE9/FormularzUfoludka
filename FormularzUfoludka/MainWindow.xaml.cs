@@ -102,6 +102,30 @@ namespace FormularzUfoludka
             LoginWindow loginWindow = new LoginWindow(dataList);
             loginWindow.Show();
         }
+
+        private void SetSliderAge(object sender, SelectionChangedEventArgs e)
+        {
+            DateTime currentDate = DateTime.Now;
+            DateTime birthDate = birthDatePicker.SelectedDate ?? currentDate;
+
+            int age = currentDate.Year - birthDate.Year;
+            if (currentDate < birthDate.AddYears(age))
+            {
+                age--;
+            }
+
+            ageSlider.Value = age;
+            //ageDisplay.Text = age.ToString();
+        }
+
+        private void SetDatePickerDate(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            int age = (int)ageSlider.Value;
+            DateTime currentDate = DateTime.Now;
+
+            DateTime birthDate = currentDate.AddYears(-age);
+            birthDatePicker.SelectedDate = birthDate;
+        }
     }
 
     public class FormData
