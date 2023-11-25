@@ -40,8 +40,8 @@ namespace FormularzUfoludka
             string gender = maleRadioButton.IsChecked == true ? "Mężczyzna" : "Kobieta";
             DateTime birthDate = birthDatePicker.SelectedDate ?? DateTime.MinValue;
             int age = (int)ageSlider.Value;
-            string planet = ((ComboBoxItem)planetComboBox.SelectedItem).Content.ToString();
-            string spiece = ((ComboBoxItem)spieceComboBox.SelectedItem).Content.ToString();
+            string planet = ((ComboBoxItem)planetComboBox.SelectedItem)?.Content?.ToString();
+            string spiece = ((ComboBoxItem)spieceComboBox.SelectedItem)?.Content?.ToString();
 
             List<string> favoriteFoods = new List<string>();
             foreach(CheckBox item in foodsStackPanel.Children)
@@ -50,6 +50,13 @@ namespace FormularzUfoludka
                 {
                     favoriteFoods.Add(item.Content.ToString());
                 }
+            }
+
+            if (string.IsNullOrEmpty(name) || string.IsNullOrEmpty(gender) || birthDate == DateTime.MinValue ||
+        age == 0 || string.IsNullOrEmpty(planet) || string.IsNullOrEmpty(spiece) || favoriteFoods.Count == 0)
+            {
+                MessageBox.Show("Proszę wypełnić wszystkie wymagane pola.", "Błąd!", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
             }
 
             List<FormData> dataList = LoadJsonData();
