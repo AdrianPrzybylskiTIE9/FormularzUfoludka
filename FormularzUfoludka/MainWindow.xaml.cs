@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Numerics;
 using System.Reflection;
 using System.Reflection.Emit;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -25,6 +27,8 @@ namespace FormularzUfoludka
     
     public partial class MainWindow : Window
     {
+        const string filePath = "data.json";
+
         public MainWindow()
         {
             InitializeComponent();
@@ -48,7 +52,7 @@ namespace FormularzUfoludka
                 }
             }
 
-            List<FormData> dataList = new List<FormData>();
+            List<FormData> dataList = LoadJsonData();
 
             dataList.Add(new FormData
             {
@@ -61,12 +65,27 @@ namespace FormularzUfoludka
                 FavoriteFoods = favoriteFoods
             });
 
-            
+            SaveJson(dataList);
 
-            DataTable dataTable = new DataTable();
-            dataTable.dataListView.ItemsSource = dataList;
-            dataTable.Show();
+            MessageBox.Show("Pomyśle przyjęto twoje zgłoszenie", "Udało się!", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
 
+        private List<FormData> LoadJsonData()
+        {
+            if (File.Exists(filePath))
+            {
+                string json = File.ReadAllText(filePath);
+                if(!string.IsNullOrEmpty(json)) {
+                    return JsonSerializer.Deserialize<List<FormData>>(json);
+                }
+            }
+            return new List<FormData>();
+        }
+
+        private void SaveJson(List<FormData> dataList)
+        {
+            string json = JsonSerializer.Serialize(dataList, new JsonSerializerOptions { WriteIndented = true });
+            File.WriteAllText(filePath, json);
         }
 
         private void adminLogin(object sender, RoutedEventArgs e)

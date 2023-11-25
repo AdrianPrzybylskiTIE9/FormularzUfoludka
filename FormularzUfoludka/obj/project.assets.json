@@ -8,19 +8,19 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Gosc\\.nuget\\packages\\": {}
+    "C:\\Users\\przyb\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Gosc\\Desktop\\FormularzUfoludka\\FormularzUfoludka\\FormularzUfoludka.csproj",
+      "projectUniqueName": "D:\\Files\\Programing\\Aplikacje Desktopowe\\FormularzUfoludka\\FormularzUfoludka\\FormularzUfoludka.csproj",
       "projectName": "FormularzUfoludka",
-      "projectPath": "C:\\Users\\Gosc\\Desktop\\FormularzUfoludka\\FormularzUfoludka\\FormularzUfoludka.csproj",
-      "packagesPath": "C:\\Users\\Gosc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Gosc\\Desktop\\FormularzUfoludka\\FormularzUfoludka\\obj\\",
+      "projectPath": "D:\\Files\\Programing\\Aplikacje Desktopowe\\FormularzUfoludka\\FormularzUfoludka\\FormularzUfoludka.csproj",
+      "packagesPath": "C:\\Users\\przyb\\.nuget\\packages\\",
+      "outputPath": "D:\\Files\\Programing\\Aplikacje Desktopowe\\FormularzUfoludka\\FormularzUfoludka\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Gosc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\przyb\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

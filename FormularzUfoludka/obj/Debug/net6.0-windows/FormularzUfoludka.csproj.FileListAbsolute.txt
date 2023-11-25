@@ -45,3 +45,28 @@ C:\Users\Gosc\Desktop\FormularzUfoludka\FormularzUfoludka\obj\Debug\net6.0-windo
 C:\Users\Gosc\Desktop\FormularzUfoludka\FormularzUfoludka\obj\Debug\net6.0-windows\ref\FormularzUfoludka.dll
 C:\Users\Gosc\Desktop\FormularzUfoludka\FormularzUfoludka\obj\Debug\net6.0-windows\LoginWindow.g.cs
 C:\Users\Gosc\Desktop\FormularzUfoludka\FormularzUfoludka\obj\Debug\net6.0-windows\LoginWindow.baml
+D:\Files\Programing\Aplikacje Desktopowe\FormularzUfoludka\FormularzUfoludka\bin\Debug\net6.0-windows\FormularzUfoludka.exe
+D:\Files\Programing\Aplikacje Desktopowe\FormularzUfoludka\FormularzUfoludka\bin\Debug\net6.0-windows\FormularzUfoludka.deps.json
+D:\Files\Programing\Aplikacje Desktopowe\FormularzUfoludka\FormularzUfoludka\bin\Debug\net6.0-windows\FormularzUfoludka.runtimeconfig.json
+D:\Files\Programing\Aplikacje Desktopowe\FormularzUfoludka\FormularzUfoludka\bin\Debug\net6.0-windows\FormularzUfoludka.dll
+D:\Files\Programing\Aplikacje Desktopowe\FormularzUfoludka\FormularzUfoludka\bin\Debug\net6.0-windows\FormularzUfoludka.pdb
+D:\Files\Programing\Aplikacje Desktopowe\FormularzUfoludka\FormularzUfoludka\obj\Debug\net6.0-windows\MainWindow.baml
+D:\Files\Programing\Aplikacje Desktopowe\FormularzUfoludka\FormularzUfoludka\obj\Debug\net6.0-windows\DataTable.g.cs
+D:\Files\Programing\Aplikacje Desktopowe\FormularzUfoludka\FormularzUfoludka\obj\Debug\net6.0-windows\LoginWindow.g.cs
+D:\Files\Programing\Aplikacje Desktopowe\FormularzUfoludka\FormularzUfoludka\obj\Debug\net6.0-windows\MainWindow.g.cs
+D:\Files\Programing\Aplikacje Desktopowe\FormularzUfoludka\FormularzUfoludka\obj\Debug\net6.0-windows\App.g.cs
+D:\Files\Programing\Aplikacje Desktopowe\FormularzUfoludka\FormularzUfoludka\obj\Debug\net6.0-windows\FormularzUfoludka_MarkupCompile.cache
+D:\Files\Programing\Aplikacje Desktopowe\FormularzUfoludka\FormularzUfoludka\obj\Debug\net6.0-windows\FormularzUfoludka_MarkupCompile.lref
+D:\Files\Programing\Aplikacje Desktopowe\FormularzUfoludka\FormularzUfoludka\obj\Debug\net6.0-windows\DataTable.baml
+D:\Files\Programing\Aplikacje Desktopowe\FormularzUfoludka\FormularzUfoludka\obj\Debug\net6.0-windows\LoginWindow.baml
+D:\Files\Programing\Aplikacje Desktopowe\FormularzUfoludka\FormularzUfoludka\obj\Debug\net6.0-windows\FormularzUfoludka.g.resources
+D:\Files\Programing\Aplikacje Desktopowe\FormularzUfoludka\FormularzUfoludka\obj\Debug\net6.0-windows\FormularzUfoludka.GeneratedMSBuildEditorConfig.editorconfig
+D:\Files\Programing\Aplikacje Desktopowe\FormularzUfoludka\FormularzUfoludka\obj\Debug\net6.0-windows\FormularzUfoludka.AssemblyInfoInputs.cache
+D:\Files\Programing\Aplikacje Desktopowe\FormularzUfoludka\FormularzUfoludka\obj\Debug\net6.0-windows\FormularzUfoludka.AssemblyInfo.cs
+D:\Files\Programing\Aplikacje Desktopowe\FormularzUfoludka\FormularzUfoludka\obj\Debug\net6.0-windows\FormularzUfoludka.csproj.CoreCompileInputs.cache
+D:\Files\Programing\Aplikacje Desktopowe\FormularzUfoludka\FormularzUfoludka\obj\Debug\net6.0-windows\FormularzUfoludka.sourcelink.json
+D:\Files\Programing\Aplikacje Desktopowe\FormularzUfoludka\FormularzUfoludka\obj\Debug\net6.0-windows\FormularzUfoludka.dll
+D:\Files\Programing\Aplikacje Desktopowe\FormularzUfoludka\FormularzUfoludka\obj\Debug\net6.0-windows\refint\FormularzUfoludka.dll
+D:\Files\Programing\Aplikacje Desktopowe\FormularzUfoludka\FormularzUfoludka\obj\Debug\net6.0-windows\FormularzUfoludka.pdb
+D:\Files\Programing\Aplikacje Desktopowe\FormularzUfoludka\FormularzUfoludka\obj\Debug\net6.0-windows\FormularzUfoludka.genruntimeconfig.cache
+D:\Files\Programing\Aplikacje Desktopowe\FormularzUfoludka\FormularzUfoludka\obj\Debug\net6.0-windows\ref\FormularzUfoludka.dll

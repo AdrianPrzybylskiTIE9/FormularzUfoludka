@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "81papcQRVeA048WaV0JpkUkVzBBa95BQXq8SZdJlQqBHtaWuBeD4IhnZ3baTR1ErdZTL7shlAbVucXNGxvQj5w==",
+  "dgSpecHash": "mlIQFiAfAwbZiU9WJEyVxNKGjJFrevpOMBO+qkCddFLejhKvnwqSWZgWrC/7sV43u7zl0B7qkyW5XO5YzJOM6A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Gosc\\Desktop\\FormularzUfoludka\\FormularzUfoludka\\FormularzUfoludka.csproj",
+  "projectFilePath": "D:\\Files\\Programing\\Aplikacje Desktopowe\\FormularzUfoludka\\FormularzUfoludka\\FormularzUfoludka.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Gosc\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.25\\microsoft.windowsdesktop.app.ref.6.0.25.nupkg.sha512",
-    "C:\\Users\\Gosc\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.25\\microsoft.netcore.app.ref.6.0.25.nupkg.sha512",
-    "C:\\Users\\Gosc\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.25\\microsoft.aspnetcore.app.ref.6.0.25.nupkg.sha512",
-    "C:\\Users\\Gosc\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.25\\microsoft.netcore.app.host.win-x64.6.0.25.nupkg.sha512"
+    "C:\\Users\\przyb\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.25\\microsoft.windowsdesktop.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\przyb\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.25\\microsoft.netcore.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\przyb\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.25\\microsoft.aspnetcore.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\przyb\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.25\\microsoft.netcore.app.host.win-x64.6.0.25.nupkg.sha512"
   ],
   "logs": []
 }
