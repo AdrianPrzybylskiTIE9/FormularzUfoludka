@@ -19,9 +19,22 @@ namespace FormularzUfoludka
     /// </summary>
     public partial class DataTable : Window
     {
-        public DataTable()
+        public DataTable(List<FormData> dataList)
         {
             InitializeComponent();
+
+            dataListView.ItemsSource = dataList.Select(data =>
+            new
+            {
+                Name = data.Name,
+                Gender = data.Gender,
+                BirthDate = data.BirthDate.ToShortDateString(),
+                Age = data.Age,
+                Planet = data.Planet,
+                Species = data.Species,
+                FavoriteFoods = string.Join(", ", data.FavoriteFoods)
+            }).ToList();
         }
+
     }
 }

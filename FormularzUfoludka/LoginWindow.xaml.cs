@@ -19,9 +19,11 @@ namespace FormularzUfoludka
     /// </summary>
     public partial class LoginWindow : Window
     {
-        public LoginWindow()
+        List<FormData> dataList;
+        public LoginWindow(List<FormData> dataList)
         {
             InitializeComponent();
+            this.dataList = dataList;
         }
 
 
@@ -33,7 +35,7 @@ namespace FormularzUfoludka
             if (login.ToLower() == "admin" && password == "123")
             {
                 this.Hide();
-                DataTable dataTable = new DataTable();
+                DataTable dataTable = new DataTable(dataList);
                 dataTable.Show();
             }
             else

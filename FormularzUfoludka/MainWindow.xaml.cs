@@ -90,7 +90,9 @@ namespace FormularzUfoludka
 
         private void adminLogin(object sender, RoutedEventArgs e)
         {
-            LoginWindow loginWindow = new LoginWindow();
+            List<FormData> dataList = LoadJsonData();
+
+            LoginWindow loginWindow = new LoginWindow(dataList);
             loginWindow.Show();
         }
     }
