@@ -75,6 +75,24 @@ namespace FormularzUfoludka
             SaveJson(dataList);
 
             MessageBox.Show("Pomyśle przyjęto twoje zgłoszenie", "Udało się!", MessageBoxButton.OK, MessageBoxImage.Information);
+
+            ResetForm();
+        }
+
+        private void ResetForm()
+        {
+            nameInput.Text = string.Empty;
+            maleRadioButton.IsChecked = false;
+            femaleRadioButton.IsChecked = false;
+            birthDatePicker.SelectedDate = DateTime.Now;
+            ageSlider.Value = 0;
+            planetComboBox.SelectedIndex = -1;
+            spieceComboBox.SelectedIndex = -1;
+
+            foreach (CheckBox item in foodsStackPanel.Children)
+            {
+                item.IsChecked = false;
+            }
         }
 
         private List<FormData> LoadJsonData()
@@ -115,7 +133,6 @@ namespace FormularzUfoludka
             }
 
             ageSlider.Value = age;
-            //ageDisplay.Text = age.ToString();
         }
 
         private void SetDatePickerDate(object sender, RoutedPropertyChangedEventArgs<double> e)
